@@ -20804,9 +20804,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4514986444668122}
-  - component: {fileID: 114407372788602730}
-  - component: {fileID: 135749318806271514}
   - component: {fileID: 205676091413216282}
+  - component: {fileID: 1708744527919622614}
+  - component: {fileID: 8182774607151995286}
   m_Layer: 0
   m_Name: GatelingGun_Yellow_L3
   m_TagString: Untagged
@@ -20830,45 +20830,6 @@ Transform:
   - {fileID: 4014590737078988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114407372788602730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979706888108350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918170c09d88a7f47991f97e2ae42f62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  go_baseRotation: {fileID: 4144936528890730}
-  go_GunBody: {fileID: 4856386421184550}
-  go_barrel: {fileID: 4575810401582574}
-  barrelRotationSpeed: 1000
-  firingRange: 29
-  muzzelFlash: {fileID: 198562569527715984}
---- !u!135 &135749318806271514
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979706888108350}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!205 &205676091413216282
 LODGroup:
   m_ObjectHideFlags: 0
@@ -20908,3 +20869,41 @@ LODGroup:
     - renderer: {fileID: 23170395206664584}
     - renderer: {fileID: 23686297716175772}
   m_Enabled: 1
+--- !u!65 &1708744527919622614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979706888108350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 2, z: 3}
+  m_Center: {x: 0.5, y: -1.75, z: 8.5}
+--- !u!114 &8182774607151995286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979706888108350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62574534e1e32f340a453b64e9508ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go_baseRotation: {fileID: 4144936528890730}
+  go_GunBody: {fileID: 4856386421184550}
+  go_barrel: {fileID: 4575810401582574}
+  barrelRotationSpeed: 1000
+  muzzelFlash: {fileID: 198562569527715984}

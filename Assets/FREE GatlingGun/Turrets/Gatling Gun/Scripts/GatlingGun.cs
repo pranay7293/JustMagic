@@ -17,7 +17,6 @@ public class GatlingGun : MonoBehaviour
     float currentRotationSpeed;
 
     // Distance the turret can aim and fire from
-    public float firingRange;
 
     // Particle system for the muzzel flash
     public ParticleSystem muzzelFlash;
@@ -29,7 +28,6 @@ public class GatlingGun : MonoBehaviour
     void Start()
     {
         // Set the firing range distance
-        this.GetComponent<SphereCollider>().radius = firingRange;
     }
 
     void Update()
@@ -37,12 +35,6 @@ public class GatlingGun : MonoBehaviour
         AimAndFire();
     }
 
-    void OnDrawGizmosSelected()
-    {
-        // Draw a red sphere at the transform's position to show the firing range
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, firingRange);
-    }
 
     // Detect an Enemy, aim and fire
     void OnTriggerEnter(Collider other)

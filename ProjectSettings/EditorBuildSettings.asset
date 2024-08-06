@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: c5ff6ba7bbf52864a8148d4c1223bd81
+  - enabled: 1
     path: Assets/Scenes/JustMagic.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
